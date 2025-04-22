@@ -8,13 +8,20 @@
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "scheme": "canfitnessreactnative",
+  
+    "platforms": [
+      "ios",
+      "android"
+    ],
     "ios": {
+      "bundleIdentifier": "canfitnessreactnative",
       "supportsTablet": true
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "backgroundColor": "#ffffff",
+        "package": "canfitnessreactnative"
       }
     },
     "web": {
@@ -29,7 +36,8 @@
           "image": "./assets/splash-icon.png"
         }
       ],
-      "react-native-edge-to-edge"
+      "react-native-edge-to-edge",
+      "expo-font"
     ]
   }
 }
