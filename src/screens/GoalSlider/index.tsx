@@ -13,7 +13,6 @@ import LinearGradient from 'react-native-linear-gradient';
 import styles from './styles';
 
 const { width } = Dimensions.get('window');
-
 const CARD_WIDTH = width * 0.72;
 const SIDE_PADDING = (width - CARD_WIDTH) / 2;
 
@@ -26,7 +25,6 @@ const data = [
 const GoalSlider = () => {
   const [selectedIndex, setSelectedIndex] = useState(0);
   const flatListRef = useRef<FlatList>(null);
-
   const handleScroll = (e: NativeSyntheticEvent<NativeScrollEvent>) => {
     const index = Math.round(e.nativeEvent.contentOffset.x / CARD_WIDTH);
     setSelectedIndex(index);
@@ -69,6 +67,7 @@ const GoalSlider = () => {
       </TouchableOpacity>
     </View>
   );
+
 };
 
 export default GoalSlider;
